@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <section>
+       <div class="header container py-5">
+           <h1 class="border-bottom border-dark pb-5 text-muted ">Bookmarker</h1>
+       </div>
+       <div class="box p-5 w-75 mx-auto bg-light d-flex justify-content-center">
+           <div class="boxContent text-center w-100">
+            <h4 class="py-4">Bookmark your favorite sites</h4>
+            <h6 class="py-2 font-weight-bold">site name</h6>
+            <input type="text" id="bookMarkName" placeholder="Bookmark Name" oninput="validSiteName();" class="w-75 px-2 m-2">
+            <div class="w-75 mx-auto alert alert-danger" id="unvalidName"><p>Enter site name first character uppercase please. </p></div>
+            <h6 class="py-2 font-weight-bold">site url</h6>
+            <input type="text" id="websiteUrl" " oninput="validSiteUrl();" placeholder="website URL" class="w-75 px-2 m-2">
+            <div class="w-75 mx-auto alert alert-danger" id="unvalidUrl"><p>Enter valid site url please. ex. facebook.com  </p></div>
+            <div class="btnSubmit py-2"><button class="btn btn-primary " onclick="addWebsite() , emptyForm();">Submit</button></div>
+           </div>
+       </div>
+       <div id="output" class="bookMarkOutput d-none">
+       
+       </div>
+   </section>
+   <footer class="container py-5">
+       <div class="copyRight border-top border-dark w-100">   
+        <span class="text-muted">© 2019 Bookmarker Inc.</span> 
+       </div>
+   </footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
